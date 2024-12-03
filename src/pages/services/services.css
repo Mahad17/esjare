@@ -1,0 +1,34 @@
+.servicesSection .row {
+	display: flex;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.servicesImageCont {
+	width: 400px;
+	height: 320px;
+}
+
+.servicesImageCont img {
+	object-fit: cover;
+	border-radius: 10px;
+	width: inherit;
+	height: inherit;
+}
+
+@media only screen and (max-width: 992px) {
+	.servicesSection .row {
+		flex-direction: column-reverse;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.servicesSection .row .col p {
+		font-size: medium;
+	}
+
+	.servicesImageCont {
+		width: 350px;
+		height: 270px;
+	}
+}

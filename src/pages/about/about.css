@@ -1,0 +1,33 @@
+.aboutSection .row {
+	display: flex;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.aboutImageCont {
+	width: 400px;
+	height: 320px;
+}
+
+.aboutImageCont img {
+	object-fit: cover;
+	border-radius: 10px;
+	width: inherit;
+}
+
+@media only screen and (max-width: 992px) {
+	.aboutSection .row {
+		flex-direction: column-reverse;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.aboutSection .row .col p {
+		font-size: medium;
+	}
+
+	.aboutImageCont {
+		width: 350px;
+		height: 270px;
+	}
+}
